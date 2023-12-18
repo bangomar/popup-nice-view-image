@@ -214,6 +214,7 @@ niceViewSlide.forEach((obj,idx) => {
                 slideItem.setAttribute('data-width','0')
             }
         })
+        document.querySelector('body').setAttribute('style','overflow:hidden')
         startSlide(idx)
     })
 })
@@ -221,6 +222,7 @@ niceViewSlide.forEach((obj,idx) => {
 closePopUpNiceView.addEventListener('click',(e)=>{
     e.preventDefault()
     document.getElementById("myPopUpNiceSlideView").style.display = "none";
+    document.querySelector('body').setAttribute('style','overflow:auto')
 })
 
 function startDragging(e){
