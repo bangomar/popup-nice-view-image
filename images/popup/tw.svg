@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px" clip-rule="evenodd" baseProfile="basic"><path fill="#212121" fill-rule="evenodd" d="M38,42H10c-2.209,0-4-1.791-4-4V10c0-2.209,1.791-4,4-4h28	c2.209,0,4,1.791,4,4v28C42,40.209,40.209,42,38,42z" clip-rule="evenodd"/><path fill="#fff" d="M34.257,34h-6.437L13.829,14h6.437L34.257,34z M28.587,32.304h2.563L19.499,15.696h-2.563 L28.587,32.304z"/><polygon fill="#fff" points="15.866,34 23.069,25.656 22.127,24.407 13.823,34"/><polygon fill="#fff" points="24.45,21.721 25.355,23.01 33.136,14 31.136,14"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(12.941176%,12.941176%,12.941176%);fill-opacity:1;" d="M 15.832031 17.5 L 4.167969 17.5 C 3.246094 17.5 2.5 16.753906 2.5 15.832031 L 2.5 4.167969 C 2.5 3.246094 3.246094 2.5 4.167969 2.5 L 15.832031 2.5 C 16.753906 2.5 17.5 3.246094 17.5 4.167969 L 17.5 15.832031 C 17.5 16.753906 16.753906 17.5 15.832031 17.5 Z M 15.832031 17.5 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 14.273438 14.167969 L 11.589844 14.167969 L 5.761719 5.832031 L 8.445312 5.832031 Z M 11.910156 13.460938 L 12.980469 13.460938 L 8.125 6.539062 L 7.058594 6.539062 Z M 11.910156 13.460938 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 6.609375 14.167969 L 9.613281 10.691406 L 9.21875 10.167969 L 5.757812 14.167969 Z M 6.609375 14.167969 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 10.1875 9.050781 L 10.566406 9.585938 L 13.808594 5.832031 L 12.972656 5.832031 Z M 10.1875 9.050781 "/>
+</g>
+</svg>
