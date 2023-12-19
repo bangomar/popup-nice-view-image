@@ -261,7 +261,7 @@ niceViewSlide.forEach((obj,idx) => {
     svgFCSpan.setAttribute('class','popup-nice-view-slide__open-dialog')
     svgFCSpan.innerHTML = svgFCForSpan
     if(obj.tagName.toLowerCase() !== 'div'){
-        alert('Error Scrit PopUp Good Image Display. Tag elements must use a div in the class="popup-nice-view-slide" attribute')
+        alert('Error Scrit PopUp Nice Image Slide. Tag elements must use a div in the class="popup-nice-view-slide" attribute')
         return;
     }
     obj.append(svgFCSpan)
