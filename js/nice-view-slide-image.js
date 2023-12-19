@@ -123,6 +123,16 @@ var itemWidth = slideritems.length > 0 ? slideritems[0].clientWidth:0;
 var maxslide = itemWidth  * (slideritems.length - 1);
 var slideNow = 0
 
+function changePropertyToolBar(){
+    document.querySelectorAll('.mySlidesNiceSlideView').forEach((mySlides,idx) => {
+        mySlides.setAttributes({
+            'data-sh-link':slideritems[idx].getAttribute('data-nice-view-sh-link'),
+            'data-desc':slideritems[idx].getAttribute('data-nice-view-desc'),
+            'data-src':slideritems[idx].getAttribute('data-nice-view-src'),
+        })
+    })
+}
+
 function startSlide(val=null){
     itemWidth = slideritems[0].clientWidth;
     maxslide = itemWidth  * (slideritems.length - 1);
@@ -142,6 +152,7 @@ function startSlide(val=null){
         slideItem.style.left = `${currentPosition}px`;
         slideItem.setAttribute('data-idx',idx)
     })
+    changePropertyToolBar()
     XNewPositionFinal = parseInt(currentPosition)
     Xposition = 0;
     XpositionMove = 0;
