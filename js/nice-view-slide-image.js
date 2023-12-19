@@ -44,7 +44,11 @@ function createPopUpNiceViewSlideImage(){
         'class':'nice-view-slide__pop-up-list-slides'
     })
     niceViewSlide.forEach(dt=>{
-        popUpContentSlideList.innerHTML += `<div class="mySlidesNiceSlideView" data-desc="${dt.getAttribute('data-nice-view-desc')}" data-sh-link="${dt.getAttribute('data-nice-view-sh-link')}" data-src="${dt.getAttribute('data-nice-view-src')}">
+        if(dt.getAttribute('data-nice-view-src') == null || dt.getAttribute('data-nice-view-src') == '' || dt.getAttribute('data-nice-view-src') == undefined){
+            alert('Attribute data-nice-view-src must be used')
+            return false
+        }
+        popUpContentSlideList.innerHTML += `<div class="mySlidesNiceSlideView" data-desc="${dt.getAttribute('data-nice-view-desc') !== null ?dt.getAttribute('data-nice-view-desc'):''}" data-sh-link="${dt.getAttribute('data-nice-view-sh-link') !== null ?dt.getAttribute('data-nice-view-sh-link'):'#'}" data-src="${dt.getAttribute('data-nice-view-src')}">
         <img class="nice-view-slide__pop-up-content-file" src="${dt.getAttribute('data-nice-view-src')}">
       </div>`
     })
