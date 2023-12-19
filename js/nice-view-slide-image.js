@@ -134,6 +134,7 @@ function changePropertyToolBar(){
 }
 
 function startSlide(val=null){
+    changePropertyToolBar()
     itemWidth = slideritems[0].clientWidth;
     maxslide = itemWidth  * (slideritems.length - 1);
     slideritems.forEach((slideItem,idx) => {
@@ -152,7 +153,6 @@ function startSlide(val=null){
         slideItem.style.left = `${currentPosition}px`;
         slideItem.setAttribute('data-idx',idx)
     })
-    changePropertyToolBar()
     XNewPositionFinal = parseInt(currentPosition)
     Xposition = 0;
     XpositionMove = 0;
