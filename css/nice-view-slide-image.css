@@ -239,5 +239,23 @@
 
   .popup-nice-view-slide{
     cursor: pointer;
+    position: relative;
+  }
+
+  .popup-nice-view-slide__open-dialog {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background: white;
+    padding: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup-nice-view-slide:hover .popup-nice-view-slide__open-dialog{
+    display: flex;
+    box-shadow: 1px 1px 10px 3px #888888;
+    border-radius: 5px;
   }
   
