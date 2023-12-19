@@ -288,16 +288,22 @@ function checkArrow(moveSlide){
     document.querySelector('#popNiceViewShareToCopyLink').setAttributes({
         'data-link':slideritems[moveSlide].getAttribute('data-sh-link')
     })
-    if(moveSlide == 0){
+    if(slideritems.length > 1){
+        if(moveSlide == 0){
+            prevSlider.style.display = 'none'
+            return false
+        }else if(moveSlide == (slideritems.length-1)){
+            nextSlider.style.display = 'none'
+            return false
+        }else{
+            prevSlider.style.display = 'block'
+            nextSlider.style.display = 'block'
+            return true
+        }
+    }else{
         prevSlider.style.display = 'none'
-        return false
-    }else if(moveSlide == (slideritems.length-1)){
         nextSlider.style.display = 'none'
         return false
-    }else{
-        prevSlider.style.display = 'block'
-        nextSlider.style.display = 'block'
-        return true
     }
 }
 
