@@ -53,9 +53,9 @@
   .nice-view-slide__close-pop-up {
     color: white;
     position: absolute;
-    top: 10px;
+    top: 24px;
     right: 25px;
-    font-size: 35px;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
@@ -103,6 +103,11 @@
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+  }
+
+  .nice-view-slide__close-pop-up svg {
+    width: 20px;
+    height: 20px;
   }
 
   .nice-view-slide__download-pop-up svg {
