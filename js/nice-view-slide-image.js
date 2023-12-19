@@ -126,9 +126,9 @@ var slideNow = 0
 function changePropertyToolBar(){
     document.querySelectorAll('.mySlidesNiceSlideView').forEach((mySlides,idx) => {
         mySlides.setAttributes({
-            'data-sh-link':slideritems[idx].getAttribute('data-nice-view-sh-link'),
-            'data-desc':slideritems[idx].getAttribute('data-nice-view-desc'),
-            'data-src':slideritems[idx].getAttribute('data-nice-view-src'),
+            'data-sh-link':niceViewSlide[idx].getAttribute('data-nice-view-sh-link'),
+            'data-desc':niceViewSlide[idx].getAttribute('data-nice-view-desc'),
+            'data-src':niceViewSlide[idx].getAttribute('data-nice-view-src'),
         })
     })
 }
