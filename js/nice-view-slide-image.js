@@ -263,6 +263,11 @@ niceViewSlide.forEach((obj,idx) => {
 closePopUpNiceView.addEventListener('click',(e)=>{
     e.preventDefault()
     document.getElementById("myPopUpNiceSlideView").style.display = "none";
+    if(document.fullscreenElement){
+        closeFullscreen()
+        document.querySelector('#fullScreenPopUpNiceView').setAttribute('style','display:block')
+        document.querySelector('#exitFullScreenPopUpNiceView').setAttribute('style','display:none')
+    }
 })
 
 function startDragging(e){
