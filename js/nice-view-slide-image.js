@@ -192,10 +192,8 @@ function btnFullScreen(){
     }
 }
 
-async function downloadImage(
-    imageSrc,
-    nameOfDownload,
-  ) {
+const downloadImage = async (imageSrc,
+    nameOfDownload) => {
     const response = await fetch(imageSrc);
   
     const blobImage = await response.blob();
@@ -214,7 +212,6 @@ async function downloadImage(
 }
 
 document.querySelector('#downloadPopUpNiceView').addEventListener('click',(e)=>{
-    e.preventDefault()
     let filename = document.querySelector('#downloadPopUpNiceView').getAttribute('data-src').replace(/^.*[\\\/]/, '');
     downloadImage(document.querySelector('#downloadPopUpNiceView').getAttribute('data-src'),Date.now()+'-'+filename)
 })
