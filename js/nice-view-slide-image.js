@@ -81,7 +81,7 @@ var XNewPosition = 0;
 var slide = 0;
 var XNewPositionFinal = 0;
 var currentPosition = 0;
-var itemWidth = slideritems[0].clientWidth;
+var itemWidth = slideritems.length > 0 ? slideritems[0].clientWidth:0;
 var maxslide = itemWidth  * (slideritems.length - 1);
 var slideNow = 0
 
