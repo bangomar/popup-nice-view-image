@@ -460,9 +460,9 @@ function checkKey(e) {
     else if (e.keyCode == '39') {
         changeSlide(e,'right')
     }
-    else if (e.keyCode == '70') {
-        btnFullScreen()
-    }
+    // else if (e.keyCode == '70') {
+    //     btnFullScreen()
+    // }
 }
 
 prevSlider.addEventListener('click',function(e){changeSlide(e,'left')})
